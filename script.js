@@ -9,6 +9,7 @@ while (i < 5) {
   i++;
 }
 //DO WHILE
+
 let j = 0;
 do {
   console.log(`(do while) j = ${j}`);
@@ -16,17 +17,35 @@ do {
 } while (j < 5);
 
 let input;
-
 do {
   input = prompt("enter password: ");
 } while (input != "123");
 console.log("access granted");
 
 //FOR EACH LOOPS
+
+//init
 const numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach((x) => {
-  if (x === 3) {
-    console.log(x);
-  }
+//       //step
+numbers.forEach((element) => {
+  console.log(element);
 });
+
+//for version
+for (let i = 0; i < numbers.length; i++) {
+  console.log(`(for version): ${numbers[i]}`);
+}
+
+//NESTED FORS
+
+debugger;
+// Outer loop, prints 12 months of year
+for (let month = 1; month <= 12; month++) {
+  console.log(`month: ${month}`);
+
+  // inner loop, prints 30 days of month
+  for (let day = 1; day <= 30; day++) {
+    console.log(`\tday: ${day}`);
+  }
+}
