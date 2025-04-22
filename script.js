@@ -49,3 +49,4 @@ for (let month = 1; month <= 12; month++) {
     console.log(`\tday: ${day}`);
   }
 }
+https://youtu.be/AyESPz9247k?si=IsSSZ5c7XpHaDmhB 
